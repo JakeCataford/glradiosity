@@ -7,16 +7,71 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C67BF6A01904C5FB00ED26EE /* plugin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C67BF69F1904C5FB00ED26EE /* plugin.cpp */; };
+		C639F1251908754300508CDA /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C639F1241908754300508CDA /* libc++.dylib */; };
+		C639F126190875CA00508CDA /* mayaHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = C67BF6A41904C5FB00ED26EE /* mayaHeaders.h */; };
 		C67BF6A21904C5FB00ED26EE /* StdAfx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C67BF6A11904C5FB00ED26EE /* StdAfx.cpp */; };
+		C67BF6B41904CC8C00ED26EE /* GLRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C67BF6AB1904CC8C00ED26EE /* GLRenderer.cpp */; };
+		C67BF6B51904CC8C00ED26EE /* GLRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = C67BF6AC1904CC8C00ED26EE /* GLRenderer.h */; };
+		C67BF6B61904CC8C00ED26EE /* OpenGLRadiosityRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C67BF6AD1904CC8C00ED26EE /* OpenGLRadiosityRenderer.cpp */; };
+		C67BF6B71904CC8C00ED26EE /* Patch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C67BF6AE1904CC8C00ED26EE /* Patch.cpp */; };
+		C67BF6B81904CC8C00ED26EE /* Patch.h in Headers */ = {isa = PBXBuildFile; fileRef = C67BF6AF1904CC8C00ED26EE /* Patch.h */; };
+		C67BF6B91904CC8C00ED26EE /* Vec2.h in Headers */ = {isa = PBXBuildFile; fileRef = C67BF6B01904CC8C00ED26EE /* Vec2.h */; };
+		C67BF6BA1904CC8C00ED26EE /* Vec3.h in Headers */ = {isa = PBXBuildFile; fileRef = C67BF6B11904CC8C00ED26EE /* Vec3.h */; };
+		C67BF6BB1904CC8C00ED26EE /* Vertex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C67BF6B21904CC8C00ED26EE /* Vertex.cpp */; };
+		C67BF6BC1904CC8C00ED26EE /* Vertex.h in Headers */ = {isa = PBXBuildFile; fileRef = C67BF6B31904CC8C00ED26EE /* Vertex.h */; };
+		C67BF6BE1904CCE700ED26EE /* OpenGLRadiosityRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = C67BF6BD1904CCE700ED26EE /* OpenGLRadiosityRenderer.h */; };
+		C67BF6C01904CF5D00ED26EE /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C67BF6BF1904CF5D00ED26EE /* OpenGL.framework */; };
+		C67BF6C21904CF6900ED26EE /* libSDL2-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C67BF6C11904CF6900ED26EE /* libSDL2-2.0.0.dylib */; };
+		C67BF6CE1907310D00ED26EE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C67BF6CD1907310D00ED26EE /* main.cpp */; };
+		C67BF6D41907328100ED26EE /* GLRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C67BF6AB1904CC8C00ED26EE /* GLRenderer.cpp */; };
+		C67BF6D61907328100ED26EE /* Patch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C67BF6AE1904CC8C00ED26EE /* Patch.cpp */; };
+		C67BF6D71907328100ED26EE /* Vertex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C67BF6B21904CC8C00ED26EE /* Vertex.cpp */; };
+		C67BF6D91907329400ED26EE /* GLRenderer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C67BF6AC1904CC8C00ED26EE /* GLRenderer.h */; };
+		C67BF6DA1907329400ED26EE /* Patch.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C67BF6AF1904CC8C00ED26EE /* Patch.h */; };
+		C67BF6DB1907329400ED26EE /* Vec2.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C67BF6B01904CC8C00ED26EE /* Vec2.h */; };
+		C67BF6DC1907329400ED26EE /* Vec3.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C67BF6B11904CC8C00ED26EE /* Vec3.h */; };
+		C67BF6DD1907329400ED26EE /* Vertex.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C67BF6B31904CC8C00ED26EE /* Vertex.h */; };
+		C67BF6E1190732AA00ED26EE /* libSDL2-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C67BF6C11904CF6900ED26EE /* libSDL2-2.0.0.dylib */; };
+		C67BF6E2190732B400ED26EE /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C67BF6BF1904CF5D00ED26EE /* OpenGL.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C67BF6C91907310D00ED26EE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				C67BF6D91907329400ED26EE /* GLRenderer.h in CopyFiles */,
+				C67BF6DA1907329400ED26EE /* Patch.h in CopyFiles */,
+				C67BF6DB1907329400ED26EE /* Vec2.h in CopyFiles */,
+				C67BF6DC1907329400ED26EE /* Vec3.h in CopyFiles */,
+				C67BF6DD1907329400ED26EE /* Vertex.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		C639F1241908754300508CDA /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		C67BF69C1904C5FB00ED26EE /* OpenGLRadiosityRenderer.bundle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = OpenGLRadiosityRenderer.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		C67BF69F1904C5FB00ED26EE /* plugin.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = plugin.cpp; sourceTree = "<group>"; };
 		C67BF6A11904C5FB00ED26EE /* StdAfx.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StdAfx.cpp; sourceTree = "<group>"; };
 		C67BF6A31904C5FB00ED26EE /* StdAfx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StdAfx.h; sourceTree = "<group>"; };
 		C67BF6A41904C5FB00ED26EE /* mayaHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mayaHeaders.h; sourceTree = "<group>"; };
+		C67BF6AB1904CC8C00ED26EE /* GLRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GLRenderer.cpp; sourceTree = "<group>"; };
+		C67BF6AC1904CC8C00ED26EE /* GLRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLRenderer.h; sourceTree = "<group>"; };
+		C67BF6AD1904CC8C00ED26EE /* OpenGLRadiosityRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLRadiosityRenderer.cpp; sourceTree = "<group>"; };
+		C67BF6AE1904CC8C00ED26EE /* Patch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Patch.cpp; sourceTree = "<group>"; };
+		C67BF6AF1904CC8C00ED26EE /* Patch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Patch.h; sourceTree = "<group>"; };
+		C67BF6B01904CC8C00ED26EE /* Vec2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vec2.h; sourceTree = "<group>"; };
+		C67BF6B11904CC8C00ED26EE /* Vec3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vec3.h; sourceTree = "<group>"; };
+		C67BF6B21904CC8C00ED26EE /* Vertex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vertex.cpp; sourceTree = "<group>"; };
+		C67BF6B31904CC8C00ED26EE /* Vertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
+		C67BF6BD1904CCE700ED26EE /* OpenGLRadiosityRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLRadiosityRenderer.h; sourceTree = "<group>"; };
+		C67BF6BF1904CF5D00ED26EE /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		C67BF6C11904CF6900ED26EE /* libSDL2-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.0.dylib"; path = "../../../../opt/boxen/homebrew/Cellar/sdl2/2.0.1/lib/libSDL2-2.0.0.dylib"; sourceTree = "<group>"; };
+		C67BF6CB1907310D00ED26EE /* RadiosityRendererStandalone */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RadiosityRendererStandalone; sourceTree = BUILT_PRODUCTS_DIR; };
+		C67BF6CD1907310D00ED26EE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../RadiosityRendererStandalone/main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +79,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C639F1251908754300508CDA /* libc++.dylib in Frameworks */,
+				C67BF6C21904CF6900ED26EE /* libSDL2-2.0.0.dylib in Frameworks */,
+				C67BF6C01904CF5D00ED26EE /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C67BF6C81907310D00ED26EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C67BF6E2190732B400ED26EE /* OpenGL.framework in Frameworks */,
+				C67BF6E1190732AA00ED26EE /* libSDL2-2.0.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +100,9 @@
 		C67BF6931904C5FA00ED26EE = {
 			isa = PBXGroup;
 			children = (
+				C639F1241908754300508CDA /* libc++.dylib */,
+				C67BF6C11904CF6900ED26EE /* libSDL2-2.0.0.dylib */,
+				C67BF6BF1904CF5D00ED26EE /* OpenGL.framework */,
 				C67BF69E1904C5FB00ED26EE /* OpenGLRadiosityRenderer */,
 				C67BF69D1904C5FB00ED26EE /* Products */,
 			);
@@ -42,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				C67BF69C1904C5FB00ED26EE /* OpenGLRadiosityRenderer.bundle */,
+				C67BF6CB1907310D00ED26EE /* RadiosityRendererStandalone */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -49,12 +120,30 @@
 		C67BF69E1904C5FB00ED26EE /* OpenGLRadiosityRenderer */ = {
 			isa = PBXGroup;
 			children = (
-				C67BF69F1904C5FB00ED26EE /* plugin.cpp */,
+				C67BF6AA1904CC8C00ED26EE /* Renderer */,
 				C67BF6A11904C5FB00ED26EE /* StdAfx.cpp */,
+				C67BF6CD1907310D00ED26EE /* main.cpp */,
 				C67BF6A31904C5FB00ED26EE /* StdAfx.h */,
 				C67BF6A41904C5FB00ED26EE /* mayaHeaders.h */,
 			);
 			path = OpenGLRadiosityRenderer;
+			sourceTree = "<group>";
+		};
+		C67BF6AA1904CC8C00ED26EE /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				C67BF6AB1904CC8C00ED26EE /* GLRenderer.cpp */,
+				C67BF6AC1904CC8C00ED26EE /* GLRenderer.h */,
+				C67BF6AD1904CC8C00ED26EE /* OpenGLRadiosityRenderer.cpp */,
+				C67BF6AE1904CC8C00ED26EE /* Patch.cpp */,
+				C67BF6AF1904CC8C00ED26EE /* Patch.h */,
+				C67BF6B01904CC8C00ED26EE /* Vec2.h */,
+				C67BF6B11904CC8C00ED26EE /* Vec3.h */,
+				C67BF6B21904CC8C00ED26EE /* Vertex.cpp */,
+				C67BF6B31904CC8C00ED26EE /* Vertex.h */,
+				C67BF6BD1904CCE700ED26EE /* OpenGLRadiosityRenderer.h */,
+			);
+			path = Renderer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -64,6 +153,13 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C639F126190875CA00508CDA /* mayaHeaders.h in Headers */,
+				C67BF6B91904CC8C00ED26EE /* Vec2.h in Headers */,
+				C67BF6BA1904CC8C00ED26EE /* Vec3.h in Headers */,
+				C67BF6BE1904CCE700ED26EE /* OpenGLRadiosityRenderer.h in Headers */,
+				C67BF6BC1904CC8C00ED26EE /* Vertex.h in Headers */,
+				C67BF6B51904CC8C00ED26EE /* GLRenderer.h in Headers */,
+				C67BF6B81904CC8C00ED26EE /* Patch.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +183,23 @@
 			productReference = C67BF69C1904C5FB00ED26EE /* OpenGLRadiosityRenderer.bundle */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
+		C67BF6CA1907310D00ED26EE /* RadiosityRendererStandalone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C67BF6D11907310D00ED26EE /* Build configuration list for PBXNativeTarget "RadiosityRendererStandalone" */;
+			buildPhases = (
+				C67BF6C71907310D00ED26EE /* Sources */,
+				C67BF6C81907310D00ED26EE /* Frameworks */,
+				C67BF6C91907310D00ED26EE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RadiosityRendererStandalone;
+			productName = RadiosityRendererStandalone;
+			productReference = C67BF6CB1907310D00ED26EE /* RadiosityRendererStandalone */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -109,6 +222,7 @@
 			projectRoot = "";
 			targets = (
 				C67BF69B1904C5FB00ED26EE /* OpenGLRadiosityRenderer */,
+				C67BF6CA1907310D00ED26EE /* RadiosityRendererStandalone */,
 			);
 		};
 /* End PBXProject section */
@@ -118,8 +232,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C67BF6A01904C5FB00ED26EE /* plugin.cpp in Sources */,
+				C67BF6B71904CC8C00ED26EE /* Patch.cpp in Sources */,
 				C67BF6A21904C5FB00ED26EE /* StdAfx.cpp in Sources */,
+				C67BF6BB1904CC8C00ED26EE /* Vertex.cpp in Sources */,
+				C67BF6B61904CC8C00ED26EE /* OpenGLRadiosityRenderer.cpp in Sources */,
+				C67BF6B41904CC8C00ED26EE /* GLRenderer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C67BF6C71907310D00ED26EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C67BF6D41907328100ED26EE /* GLRenderer.cpp in Sources */,
+				C67BF6D61907328100ED26EE /* Patch.cpp in Sources */,
+				C67BF6D71907328100ED26EE /* Vertex.cpp in Sources */,
+				C67BF6CE1907310D00ED26EE /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +326,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/";
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = "";
 				DYLIB_CURRENT_VERSION = "";
@@ -209,7 +338,7 @@
 					_BOOL,
 					REQUIRE_IOSTREAM,
 				);
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
@@ -217,12 +346,17 @@
 				HEADER_SEARCH_PATHS = (
 					.,
 					"$(MAYA_LOCATION)/devkit/include/",
+					/opt/boxen/homebrew/Cellar/sdl2/2.0.1/include,
 				);
-				LIBRARY_SEARCH_PATHS = "$(MAYA_LOCATION)/Maya.app/Contents/MacOS";
+				LIBRARY_SEARCH_PATHS = (
+					"$(MAYA_LOCATION)/Maya.app/Contents/MacOS",
+					/opt/boxen/homebrew/Cellar/sdl2/2.0.1/lib/,
+					/opt/boxen/homebrew/Cellar/sdl2/2.0.1/lib,
+				);
 				MACH_O_TYPE = mh_bundle;
-				MACOSX_DEPLOYMENT_TARGET = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				MAYA_LOCATION = /Applications/Autodesk/maya2014;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-Wl,-executable_path,$(MAYA_LOCATION)/Maya.app/Contents/MacOS",
 					"-Wl,-exported_symbol,__Z16initializePlugin7MObject",
@@ -234,7 +368,7 @@
 					"-lFoundation",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx;
 				USER_LOCATION = "$(HOME)/Library/Preferences/Autodesk/maya/2014-x64";
 				VALID_ARCHS = x86_64;
 			};
@@ -244,6 +378,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/";
 				COPY_PHASE_STRIP = YES;
 				DYLIB_COMPATIBILITY_VERSION = "";
 				DYLIB_CURRENT_VERSION = "";
@@ -254,7 +389,7 @@
 					_BOOL,
 					REQUIRE_IOSTREAM,
 				);
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
@@ -262,12 +397,17 @@
 				HEADER_SEARCH_PATHS = (
 					.,
 					"$(MAYA_LOCATION)/devkit/include/",
+					/opt/boxen/homebrew/Cellar/sdl2/2.0.1/include,
 				);
-				LIBRARY_SEARCH_PATHS = "$(MAYA_LOCATION)/Maya.app/Contents/MacOS";
+				LIBRARY_SEARCH_PATHS = (
+					"$(MAYA_LOCATION)/Maya.app/Contents/MacOS",
+					/opt/boxen/homebrew/Cellar/sdl2/2.0.1/lib/,
+					/opt/boxen/homebrew/Cellar/sdl2/2.0.1/lib,
+				);
 				MACH_O_TYPE = mh_bundle;
-				MACOSX_DEPLOYMENT_TARGET = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				MAYA_LOCATION = /Applications/Autodesk/maya2014;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-Wl,-executable_path,$(MAYA_LOCATION)/Maya.app/Contents/MacOS",
 					"-Wl,-exported_symbol,__Z16initializePlugin7MObject",
@@ -279,9 +419,51 @@
 					"-lFoundation",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx;
 				USER_LOCATION = "$(HOME)/Library/Preferences/Autodesk/maya/2014-x64";
 				VALID_ARCHS = x86_64;
+			};
+			name = Release;
+		};
+		C67BF6D21907310D00ED26EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode5.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					.,
+					"$(MAYA_LOCATION)/devkit/include/",
+					/opt/boxen/homebrew/Cellar/sdl2/2.0.1/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/boxen/homebrew/Cellar/sdl2/2.0.1/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C67BF6D31907310D00ED26EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode5.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					.,
+					"$(MAYA_LOCATION)/devkit/include/",
+					/opt/boxen/homebrew/Cellar/sdl2/2.0.1/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/boxen/homebrew/Cellar/sdl2/2.0.1/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -304,6 +486,16 @@
 				C67BF6A91904C5FB00ED26EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C67BF6D11907310D00ED26EE /* Build configuration list for PBXNativeTarget "RadiosityRendererStandalone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C67BF6D21907310D00ED26EE /* Debug */,
+				C67BF6D31907310D00ED26EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

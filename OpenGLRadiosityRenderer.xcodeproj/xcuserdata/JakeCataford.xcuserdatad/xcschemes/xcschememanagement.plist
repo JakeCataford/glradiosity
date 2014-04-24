@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>RadiosityRendererStandalone.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>C67BF69B1904C5FB00ED26EE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C67BF6CA1907310D00ED26EE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
